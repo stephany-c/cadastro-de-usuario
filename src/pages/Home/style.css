@@ -1,7 +1,7 @@
 .container {
   display: flex;
   align-items: center;
-  flex-direction: column; /* Corrigido */
+  flex-direction: column; 
   padding-top: 100px;
 }
 
@@ -24,8 +24,8 @@ form {
 }
 
 form button {
-  border-radius: 30px; /* Corrigido */
-  background-color: rgb(133, 8, 179);
+  border-radius: 30px; 
+  background-color: rgb(180, 63, 253);
   height: 40px;
   border: none;
   font-weight: bold;
@@ -33,21 +33,25 @@ form button {
   font-size: 14px;
 }
 
-form button:hover { /* Corrigido */
-  opacity: 0.8;
+form button:hover { 
+  opacity: 0.5;
 }
 
 form input {
-  border: 1px solid rgb(75, 5, 75);
+  border: 1px solid rgb(52, 42, 52);
   border-radius: 30px;
   height: 40px;
-  background-color: rgb(101, 89, 126);
-  color: aliceblue;
+  background-color: #3e3d59;
+  color: rgb(156, 169, 181);
   font-size: 16px;
   padding-left: 10px;
   outline: none;
 }
 
+form ::placeholder{
+
+  color: rgb(215, 215, 227);
+}
 .card {
   display: flex;
   justify-content: space-between;
@@ -62,7 +66,7 @@ form input {
   color: #ffff;
   font-weight: bold;
 
-  &span{
+  & span{
     font-weight: normal;
   }
 }

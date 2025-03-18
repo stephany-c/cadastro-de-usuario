@@ -1,15 +1,16 @@
 
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import './style.css'
 import Excluir from '../../assets/excluir.png'
 import api from '../../services/api'
 
 function Home() {
-  let users = [];
+  const [users, setUsers] = useState([])
+
   async function getUsers() {
     const usersFromApi = await api.get('/usuarios')
-    users = usersFromApi.data
-    console.log(users)
+    setUsers(usersFromApi.data)
+
   }
   useEffect(() => {
     getUsers()
